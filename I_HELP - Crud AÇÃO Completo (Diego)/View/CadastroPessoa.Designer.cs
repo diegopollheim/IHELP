@@ -1,0 +1,316 @@
+﻿
+namespace I_HELP.View
+{
+    partial class CadastroPessoa
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroPessoa));
+            this.label1 = new System.Windows.Forms.Label();
+            this.ttbNomePessoa = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.mskRG = new System.Windows.Forms.MaskedTextBox();
+            this.mskCPF = new System.Windows.Forms.MaskedTextBox();
+            this.dtpNasc = new System.Windows.Forms.DateTimePicker();
+            this.lbIndice = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 60F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(983, 91);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "CADASTRAR NOVA PESSOA";
+            // 
+            // ttbNomePessoa
+            // 
+            this.ttbNomePessoa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ttbNomePessoa.BackColor = System.Drawing.Color.White;
+            this.ttbNomePessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.ttbNomePessoa.Location = new System.Drawing.Point(309, 129);
+            this.ttbNomePessoa.Name = "ttbNomePessoa";
+            this.ttbNomePessoa.Size = new System.Drawing.Size(378, 45);
+            this.ttbNomePessoa.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label2.Location = new System.Drawing.Point(303, 97);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 31);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "NOME";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label4
+            // 
+            this.label4.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label4.Location = new System.Drawing.Point(45, 191);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 31);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "RG";
+            // 
+            // label5
+            // 
+            this.label5.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label5.Location = new System.Drawing.Point(203, 191);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(158, 31);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "TELEFONE";
+            // 
+            // mskTelefone
+            // 
+            this.mskTelefone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mskTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.mskTelefone.Location = new System.Drawing.Point(209, 222);
+            this.mskTelefone.Mask = "(00)00000-0000";
+            this.mskTelefone.Name = "mskTelefone";
+            this.mskTelefone.Size = new System.Drawing.Size(251, 45);
+            this.mskTelefone.TabIndex = 4;
+            this.mskTelefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // label6
+            // 
+            this.label6.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label6.Location = new System.Drawing.Point(475, 191);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(196, 31);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "NASCIMENTO";
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCadastrar.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnCadastrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCadastrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCadastrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrar.Location = new System.Drawing.Point(478, 294);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(209, 50);
+            this.btnCadastrar.TabIndex = 11;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAlterar.Location = new System.Drawing.Point(265, 294);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(209, 50);
+            this.btnAlterar.TabIndex = 13;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExcluir.BackColor = System.Drawing.Color.Red;
+            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnExcluir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Location = new System.Drawing.Point(51, 294);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(209, 50);
+            this.btnExcluir.TabIndex = 14;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // mskRG
+            // 
+            this.mskRG.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mskRG.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.mskRG.Location = new System.Drawing.Point(51, 222);
+            this.mskRG.Name = "mskRG";
+            this.mskRG.Size = new System.Drawing.Size(137, 45);
+            this.mskRG.TabIndex = 3;
+            // 
+            // mskCPF
+            // 
+            this.mskCPF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mskCPF.BackColor = System.Drawing.Color.White;
+            this.mskCPF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mskCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.mskCPF.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.mskCPF.Location = new System.Drawing.Point(51, 129);
+            this.mskCPF.Mask = "000,000,000-00";
+            this.mskCPF.Name = "mskCPF";
+            this.mskCPF.Size = new System.Drawing.Size(237, 45);
+            this.mskCPF.TabIndex = 1;
+            this.mskCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mskCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCPF_MaskInputRejected);
+            this.mskCPF.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mskCPF_KeyDown);
+            this.mskCPF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mskCPF_KeyPress);
+            this.mskCPF.KeyUp += new System.Windows.Forms.KeyEventHandler(this.mskCPF_KeyUp);
+            // 
+            // dtpNasc
+            // 
+            this.dtpNasc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpNasc.CustomFormat = "dd/mm/yyyy";
+            this.dtpNasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.dtpNasc.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.dtpNasc.Location = new System.Drawing.Point(481, 222);
+            this.dtpNasc.MaxDate = new System.DateTime(2100, 12, 25, 23, 59, 59, 0);
+            this.dtpNasc.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtpNasc.Name = "dtpNasc";
+            this.dtpNasc.Size = new System.Drawing.Size(206, 45);
+            this.dtpNasc.TabIndex = 17;
+            this.dtpNasc.Value = new System.DateTime(2021, 11, 11, 0, 0, 0, 0);
+            // 
+            // lbIndice
+            // 
+            this.lbIndice.AutoSize = true;
+            this.lbIndice.Location = new System.Drawing.Point(146, 0);
+            this.lbIndice.Name = "lbIndice";
+            this.lbIndice.Size = new System.Drawing.Size(0, 13);
+            this.lbIndice.TabIndex = 18;
+            this.lbIndice.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(582, 12);
+            this.button4.MaximumSize = new System.Drawing.Size(75, 75);
+            this.button4.MinimumSize = new System.Drawing.Size(50, 50);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 50);
+            this.button4.TabIndex = 19;
+            this.button4.Text = "VOLTAR";
+            this.button4.UseMnemonic = false;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label3
+            // 
+            this.label3.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label3.Location = new System.Drawing.Point(45, 97);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 31);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "CPF";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // CadastroPessoa
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(669, 388);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.lbIndice);
+            this.Controls.Add(this.dtpNasc);
+            this.Controls.Add(this.mskCPF);
+            this.Controls.Add(this.mskRG);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnAlterar);
+            this.Controls.Add(this.btnCadastrar);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.mskTelefone);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ttbNomePessoa);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "CadastroPessoa";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro de Pessoa";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox ttbNomePessoa;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.MaskedTextBox mskTelefone;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.MaskedTextBox mskRG;
+        private System.Windows.Forms.MaskedTextBox mskCPF;
+        private System.Windows.Forms.DateTimePicker dtpNasc;
+        private System.Windows.Forms.Label lbIndice;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label3;
+    }
+}
