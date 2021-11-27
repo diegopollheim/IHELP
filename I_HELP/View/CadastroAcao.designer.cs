@@ -50,7 +50,7 @@ namespace I_HELP.View
             // 
             this.ttbNomeAcao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ttbNomeAcao.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ttbNomeAcao.Location = new System.Drawing.Point(92, 167);
+            this.ttbNomeAcao.Location = new System.Drawing.Point(274, 235);
             this.ttbNomeAcao.MaxLength = 50;
             this.ttbNomeAcao.Name = "ttbNomeAcao";
             this.ttbNomeAcao.Size = new System.Drawing.Size(668, 45);
@@ -64,7 +64,7 @@ namespace I_HELP.View
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(86, 131);
+            this.label5.Location = new System.Drawing.Point(268, 199);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(179, 31);
             this.label5.TabIndex = 8;
@@ -77,7 +77,7 @@ namespace I_HELP.View
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(87, 238);
+            this.label1.Location = new System.Drawing.Point(269, 306);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 31);
             this.label1.TabIndex = 10;
@@ -87,13 +87,13 @@ namespace I_HELP.View
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Bauhaus 93", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Bold);
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTitulo.Location = new System.Drawing.Point(12, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(680, 91);
+            this.lblTitulo.Size = new System.Drawing.Size(793, 91);
             this.lblTitulo.TabIndex = 11;
-            this.lblTitulo.Text = "Cadastro de Ação";
+            this.lblTitulo.Text = "CADASTRAR AÇÃO";
             // 
             // label3
             // 
@@ -102,7 +102,7 @@ namespace I_HELP.View
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(87, 347);
+            this.label3.Location = new System.Drawing.Point(269, 415);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(191, 31);
             this.label3.TabIndex = 13;
@@ -115,7 +115,7 @@ namespace I_HELP.View
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(452, 347);
+            this.label4.Location = new System.Drawing.Point(634, 415);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(172, 31);
             this.label4.TabIndex = 15;
@@ -129,7 +129,7 @@ namespace I_HELP.View
             this.btnCadastrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnCadastrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Location = new System.Drawing.Point(551, 460);
+            this.btnCadastrar.Location = new System.Drawing.Point(733, 528);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(209, 50);
             this.btnCadastrar.TabIndex = 16;
@@ -141,7 +141,7 @@ namespace I_HELP.View
             // 
             this.dtpFinal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtpFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFinal.Location = new System.Drawing.Point(458, 381);
+            this.dtpFinal.Location = new System.Drawing.Point(640, 449);
             this.dtpFinal.Name = "dtpFinal";
             this.dtpFinal.Size = new System.Drawing.Size(303, 45);
             this.dtpFinal.TabIndex = 18;
@@ -150,7 +150,7 @@ namespace I_HELP.View
             // 
             this.dtpIni.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtpIni.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpIni.Location = new System.Drawing.Point(93, 381);
+            this.dtpIni.Location = new System.Drawing.Point(275, 449);
             this.dtpIni.Name = "dtpIni";
             this.dtpIni.Size = new System.Drawing.Size(325, 45);
             this.dtpIni.TabIndex = 19;
@@ -163,7 +163,7 @@ namespace I_HELP.View
             this.cbbEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbEstado.FormattingEnabled = true;
-            this.cbbEstado.Location = new System.Drawing.Point(93, 272);
+            this.cbbEstado.Location = new System.Drawing.Point(275, 340);
             this.cbbEstado.Name = "cbbEstado";
             this.cbbEstado.Size = new System.Drawing.Size(325, 46);
             this.cbbEstado.TabIndex = 22;
@@ -178,7 +178,7 @@ namespace I_HELP.View
             this.cbbCidade.Enabled = false;
             this.cbbCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbCidade.FormattingEnabled = true;
-            this.cbbCidade.Location = new System.Drawing.Point(458, 272);
+            this.cbbCidade.Location = new System.Drawing.Point(640, 340);
             this.cbbCidade.Name = "cbbCidade";
             this.cbbCidade.Size = new System.Drawing.Size(303, 46);
             this.cbbCidade.TabIndex = 23;
@@ -190,7 +190,7 @@ namespace I_HELP.View
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(452, 238);
+            this.label6.Location = new System.Drawing.Point(634, 306);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(118, 31);
             this.label6.TabIndex = 24;
@@ -199,8 +199,12 @@ namespace I_HELP.View
             // btnSalAlt
             // 
             this.btnSalAlt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSalAlt.BackColor = System.Drawing.Color.Transparent;
-            this.btnSalAlt.Location = new System.Drawing.Point(93, 460);
+            this.btnSalAlt.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnSalAlt.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSalAlt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnSalAlt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnSalAlt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalAlt.Location = new System.Drawing.Point(733, 528);
             this.btnSalAlt.Name = "btnSalAlt";
             this.btnSalAlt.Size = new System.Drawing.Size(209, 50);
             this.btnSalAlt.TabIndex = 25;
@@ -225,7 +229,7 @@ namespace I_HELP.View
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(740, 12);
+            this.button4.Location = new System.Drawing.Point(1103, 12);
             this.button4.MaximumSize = new System.Drawing.Size(75, 75);
             this.button4.MinimumSize = new System.Drawing.Size(50, 50);
             this.button4.Name = "button4";
@@ -241,7 +245,7 @@ namespace I_HELP.View
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(827, 562);
+            this.ClientSize = new System.Drawing.Size(1190, 698);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.lbIndiceAca);
             this.Controls.Add(this.btnSalAlt);

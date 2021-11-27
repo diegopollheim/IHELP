@@ -20,6 +20,10 @@ namespace I_HELP.View
         public Entrega()
         {
             InitializeComponent();
+
+            dtpEnt.Format = DateTimePickerFormat.Custom;
+            dtpEnt.CustomFormat = "dd/MM/yyyy"; // Formato do Date Picker
+
             cbbPessoa.Items.Add(new ItemComboBox("Selecione", 0));
             PessoaController selecionarpessoa = new PessoaController();
             DataTable dtPessoas = selecionarpessoa.SelecionarPessoas();
@@ -110,17 +114,22 @@ namespace I_HELP.View
                     {
                         if (entregaController.CadastrarEntrega(new EntregaEntity((cbbAcao.SelectedItem as ItemComboBox).Id, Convert.ToInt32(dtPessoa.Rows[0]["codfam"]), (cbbPessoa.SelectedItem as ItemComboBox).Id, dtpEnt.Value)))
                         {
-                            MessageBox.Show("Entrega cadastrada com sucesso");
+                            MessageBox.Show("Entrega cadastrada com sucesso", "Concluido");
                             this.Close();
                         }
                     }
                     else
                     {
                         DataTable dtFamiliar = pessoaController.BuscarPessoaId(int.Parse(Convert.ToInt32(dtEntrega.Rows[0]["codpes"]).ToString()));
-                        MessageBox.Show("Uma pessoa de mesma familia ja participou desta ação.");
+                        MessageBox.Show("Uma pessoa de mesma familia ja participou desta ação.","Atenção");
                     }
                 }
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

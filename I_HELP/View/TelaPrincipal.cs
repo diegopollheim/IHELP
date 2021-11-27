@@ -27,7 +27,7 @@ namespace I_HELP
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CadastroFamilia tela = new CadastroFamilia();
+            RelatorioFamilia tela = new RelatorioFamilia();
             tela.Show();
         }
 

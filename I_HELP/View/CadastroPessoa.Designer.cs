@@ -47,17 +47,18 @@ namespace I_HELP.View
             this.button4 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.ccbFamilias = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 60F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(983, 91);
+            this.label1.Size = new System.Drawing.Size(1148, 91);
             this.label1.TabIndex = 0;
             this.label1.Text = "CADASTRAR NOVA PESSOA";
             // 
@@ -66,9 +67,9 @@ namespace I_HELP.View
             this.ttbNomePessoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ttbNomePessoa.BackColor = System.Drawing.Color.White;
             this.ttbNomePessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.ttbNomePessoa.Location = new System.Drawing.Point(309, 129);
+            this.ttbNomePessoa.Location = new System.Drawing.Point(305, 434);
             this.ttbNomePessoa.Name = "ttbNomePessoa";
-            this.ttbNomePessoa.Size = new System.Drawing.Size(378, 45);
+            this.ttbNomePessoa.Size = new System.Drawing.Size(636, 45);
             this.ttbNomePessoa.TabIndex = 2;
             // 
             // label2
@@ -77,12 +78,11 @@ namespace I_HELP.View
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label2.Location = new System.Drawing.Point(303, 97);
+            this.label2.Location = new System.Drawing.Point(299, 402);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 31);
             this.label2.TabIndex = 2;
             this.label2.Text = "NOME";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4
             // 
@@ -91,7 +91,7 @@ namespace I_HELP.View
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label4.Location = new System.Drawing.Point(45, 191);
+            this.label4.Location = new System.Drawing.Point(299, 496);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 31);
             this.label4.TabIndex = 5;
@@ -104,7 +104,7 @@ namespace I_HELP.View
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label5.Location = new System.Drawing.Point(203, 191);
+            this.label5.Location = new System.Drawing.Point(654, 499);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 31);
             this.label5.TabIndex = 7;
@@ -114,10 +114,10 @@ namespace I_HELP.View
             // 
             this.mskTelefone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mskTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.mskTelefone.Location = new System.Drawing.Point(209, 222);
+            this.mskTelefone.Location = new System.Drawing.Point(660, 530);
             this.mskTelefone.Mask = "(00)00000-0000";
             this.mskTelefone.Name = "mskTelefone";
-            this.mskTelefone.Size = new System.Drawing.Size(251, 45);
+            this.mskTelefone.Size = new System.Drawing.Size(282, 45);
             this.mskTelefone.TabIndex = 4;
             this.mskTelefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
@@ -128,7 +128,7 @@ namespace I_HELP.View
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label6.Location = new System.Drawing.Point(475, 191);
+            this.label6.Location = new System.Drawing.Point(299, 606);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(196, 31);
             this.label6.TabIndex = 9;
@@ -142,7 +142,7 @@ namespace I_HELP.View
             this.btnCadastrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnCadastrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Location = new System.Drawing.Point(478, 294);
+            this.btnCadastrar.Location = new System.Drawing.Point(732, 721);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(209, 50);
             this.btnCadastrar.TabIndex = 11;
@@ -153,7 +153,7 @@ namespace I_HELP.View
             // btnAlterar
             // 
             this.btnAlterar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAlterar.Location = new System.Drawing.Point(265, 294);
+            this.btnAlterar.Location = new System.Drawing.Point(519, 721);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(209, 50);
             this.btnAlterar.TabIndex = 13;
@@ -169,7 +169,7 @@ namespace I_HELP.View
             this.btnExcluir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Location = new System.Drawing.Point(51, 294);
+            this.btnExcluir.Location = new System.Drawing.Point(305, 721);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(209, 50);
             this.btnExcluir.TabIndex = 14;
@@ -181,9 +181,9 @@ namespace I_HELP.View
             // 
             this.mskRG.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mskRG.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.mskRG.Location = new System.Drawing.Point(51, 222);
+            this.mskRG.Location = new System.Drawing.Point(305, 530);
             this.mskRG.Name = "mskRG";
-            this.mskRG.Size = new System.Drawing.Size(137, 45);
+            this.mskRG.Size = new System.Drawing.Size(261, 45);
             this.mskRG.TabIndex = 3;
             // 
             // mskCPF
@@ -193,10 +193,10 @@ namespace I_HELP.View
             this.mskCPF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mskCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.mskCPF.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.mskCPF.Location = new System.Drawing.Point(51, 129);
+            this.mskCPF.Location = new System.Drawing.Point(305, 344);
             this.mskCPF.Mask = "000,000,000-00";
             this.mskCPF.Name = "mskCPF";
-            this.mskCPF.Size = new System.Drawing.Size(237, 45);
+            this.mskCPF.Size = new System.Drawing.Size(261, 45);
             this.mskCPF.TabIndex = 1;
             this.mskCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mskCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCPF_MaskInputRejected);
@@ -210,11 +210,11 @@ namespace I_HELP.View
             this.dtpNasc.CustomFormat = "dd/mm/yyyy";
             this.dtpNasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.dtpNasc.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.dtpNasc.Location = new System.Drawing.Point(481, 222);
+            this.dtpNasc.Location = new System.Drawing.Point(305, 640);
             this.dtpNasc.MaxDate = new System.DateTime(2100, 12, 25, 23, 59, 59, 0);
             this.dtpNasc.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpNasc.Name = "dtpNasc";
-            this.dtpNasc.Size = new System.Drawing.Size(206, 45);
+            this.dtpNasc.Size = new System.Drawing.Size(261, 45);
             this.dtpNasc.TabIndex = 17;
             this.dtpNasc.Value = new System.DateTime(2021, 11, 11, 0, 0, 0, 0);
             // 
@@ -236,7 +236,7 @@ namespace I_HELP.View
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(582, 12);
+            this.button4.Location = new System.Drawing.Point(1105, 12);
             this.button4.MaximumSize = new System.Drawing.Size(75, 75);
             this.button4.MinimumSize = new System.Drawing.Size(50, 50);
             this.button4.Name = "button4";
@@ -254,7 +254,7 @@ namespace I_HELP.View
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label3.Location = new System.Drawing.Point(45, 97);
+            this.label3.Location = new System.Drawing.Point(299, 312);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 31);
             this.label3.TabIndex = 3;
@@ -263,18 +263,34 @@ namespace I_HELP.View
             // 
             // ccbFamilias
             // 
+            this.ccbFamilias.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ccbFamilias.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ccbFamilias.FormattingEnabled = true;
-            this.ccbFamilias.Location = new System.Drawing.Point(92, 273);
+            this.ccbFamilias.Location = new System.Drawing.Point(660, 642);
             this.ccbFamilias.Name = "ccbFamilias";
-            this.ccbFamilias.Size = new System.Drawing.Size(121, 21);
+            this.ccbFamilias.Size = new System.Drawing.Size(282, 46);
             this.ccbFamilias.TabIndex = 20;
+            // 
+            // label7
+            // 
+            this.label7.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label7.Location = new System.Drawing.Point(654, 606);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(120, 31);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "FAMILIA";
             // 
             // CadastroPessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(669, 388);
+            this.ClientSize = new System.Drawing.Size(1192, 819);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.ccbFamilias);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.lbIndice);
@@ -323,5 +339,6 @@ namespace I_HELP.View
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox ccbFamilias;
+        private System.Windows.Forms.Label label7;
     }
 }

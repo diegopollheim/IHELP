@@ -35,6 +35,7 @@ namespace I_HELP.View
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAcoes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,22 +43,22 @@ namespace I_HELP.View
             // 
             this.dgvAcoes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvAcoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAcoes.Location = new System.Drawing.Point(31, 132);
+            this.dgvAcoes.Location = new System.Drawing.Point(260, 249);
             this.dgvAcoes.Name = "dgvAcoes";
-            this.dgvAcoes.Size = new System.Drawing.Size(688, 238);
+            this.dgvAcoes.Size = new System.Drawing.Size(714, 238);
             this.dgvAcoes.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(15, 27);
+            this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(720, 91);
+            this.label1.Size = new System.Drawing.Size(950, 91);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Ações Cadastradas";
+            this.label1.Text = "RELATÓRIO DE AÇÕES";
             // 
             // btnExcluirAca
             // 
@@ -65,7 +66,7 @@ namespace I_HELP.View
             this.btnExcluirAca.BackColor = System.Drawing.Color.Red;
             this.btnExcluirAca.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnExcluirAca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluirAca.Location = new System.Drawing.Point(32, 389);
+            this.btnExcluirAca.Location = new System.Drawing.Point(261, 506);
             this.btnExcluirAca.Name = "btnExcluirAca";
             this.btnExcluirAca.Size = new System.Drawing.Size(209, 50);
             this.btnExcluirAca.TabIndex = 21;
@@ -81,7 +82,7 @@ namespace I_HELP.View
             this.btnVoltar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnVoltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Location = new System.Drawing.Point(511, 389);
+            this.btnVoltar.Location = new System.Drawing.Point(765, 506);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(209, 50);
             this.btnVoltar.TabIndex = 22;
@@ -93,7 +94,7 @@ namespace I_HELP.View
             // 
             this.btnAlterar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAlterar.BackColor = System.Drawing.Color.Transparent;
-            this.btnAlterar.Location = new System.Drawing.Point(276, 389);
+            this.btnAlterar.Location = new System.Drawing.Point(514, 506);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(209, 50);
             this.btnAlterar.TabIndex = 23;
@@ -110,7 +111,7 @@ namespace I_HELP.View
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(660, 12);
+            this.button4.Location = new System.Drawing.Point(1117, 12);
             this.button4.MaximumSize = new System.Drawing.Size(75, 75);
             this.button4.MinimumSize = new System.Drawing.Size(50, 50);
             this.button4.Name = "button4";
@@ -121,13 +122,28 @@ namespace I_HELP.View
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(254, 200);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(720, 26);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Para alterar ou excluir selecione a linha e depois clique na ação desejada";
+            // 
             // RelatorioAcoes
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuPopup;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(747, 480);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(1204, 715);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.btnVoltar);
@@ -155,5 +171,6 @@ namespace I_HELP.View
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label2;
     }
 }

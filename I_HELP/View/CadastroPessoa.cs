@@ -26,11 +26,10 @@ namespace I_HELP.View
             dtpNasc.MaxDate = DateTime.Today;
             dtpNasc.Value = DateTime.Today.AddYears(-18); // Atribuindo o valor do Data Picker 18 anos atrás baseado na data atual
 
-
-
-            btnAlterar.Enabled = false;
+            // Deixa os botoes de alterar e excluir escondidos | botao de cadastrar desativado
+            btnAlterar.Hide();
+            btnExcluir.Hide();
             btnCadastrar.Enabled = false;
-            btnExcluir.Enabled = false;
             BloquearInputs();
 
 
@@ -290,8 +289,8 @@ namespace I_HELP.View
                         mskCPF.Enabled = false; // Bloqueia o input não permitindo mais a alteração
                         LiberarInputs();
 
-                        btnAlterar.Enabled = true;
-                        btnExcluir.Enabled = true;
+                        btnAlterar.Show();
+                        btnExcluir.Show();
 
                         mskCPF.Text = resultado.Rows[0]["cpfpes"].ToString();
                         ttbNomePessoa.Text = resultado.Rows[0]["nompes"].ToString();
@@ -318,18 +317,15 @@ namespace I_HELP.View
         protected override void OnPaintBackground(PaintEventArgs e)
         {
             using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,
-                                                                       Color.FromArgb(174, 211, 252),
-                                                                       Color.FromArgb(199, 225, 252),
+                                                                       Color.FromArgb(184, 244, 234),
+                                                                       Color.FromArgb(116, 236, 126),
                                                                        45F))
             {
                 e.Graphics.FillRectangle(brush, this.ClientRectangle);
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -345,5 +341,7 @@ namespace I_HELP.View
         {
 
         }
+
+       
     }
 }

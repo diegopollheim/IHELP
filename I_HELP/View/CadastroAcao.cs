@@ -38,7 +38,7 @@ namespace I_HELP.View
             lbIndiceAca.Hide();
             lblTitulo.Text = "Alterar dados da AÇÃO"; // altera o titulo quando estiver sendo feita uma alteração em uma ação
             lbIndiceAca.Text = acao.Id.ToString(); // reserva o codaca para fazer o update
-            btnCadastrar.Enabled = false;
+            btnCadastrar.Hide();
             btnSalAlt.Show();
 
             //CHAMA METODO DE DEFINE OS DATEPICKERS

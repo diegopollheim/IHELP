@@ -28,7 +28,6 @@ C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\bin\Debug\I_HELP.exe.config
 C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\bin\Debug\I_HELP.exe
 C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\bin\Debug\I_HELP.pdb
 C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.csproj.AssemblyReference.cache
-C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.Form1.resources
 C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.Properties.Resources.resources
 C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.View.CadastroPessoa.resources
 C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.csproj.GenerateResource.cache
@@ -169,3 +168,9 @@ C:\Users\edgar\Desktop\I_HELP\I_HELP-20211126T223344Z-001\I_HELP\obj\Debug\I_HEL
 C:\Users\edgar\Desktop\I_HELP\I_HELP-20211126T223344Z-001\I_HELP\obj\Debug\I_HELP.csproj.CoreCompileInputs.cache
 C:\Users\edgar\Desktop\I_HELP\I_HELP-20211126T223344Z-001\I_HELP\obj\Debug\I_HELP.exe
 C:\Users\edgar\Desktop\I_HELP\I_HELP-20211126T223344Z-001\I_HELP\obj\Debug\I_HELP.pdb
+C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.View.CadastroAcao.resources
+C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.View.CadastroFamilia.resources
+C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.View.Entrega.resources
+C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.View.RelatorioAcoes.resources
+C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.TelaPrincipal.resources
+C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.View.RelatorioFamilia.resources

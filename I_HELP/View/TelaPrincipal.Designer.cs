@@ -91,7 +91,7 @@ namespace I_HELP
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(588, 12);
+            this.button4.Location = new System.Drawing.Point(1120, 12);
             this.button4.MaximumSize = new System.Drawing.Size(75, 75);
             this.button4.MinimumSize = new System.Drawing.Size(50, 50);
             this.button4.Name = "button4";
@@ -106,11 +106,11 @@ namespace I_HELP
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 60F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 91);
+            this.label1.Size = new System.Drawing.Size(297, 91);
             this.label1.TabIndex = 5;
             this.label1.Text = "I.HELP";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,7 +136,7 @@ namespace I_HELP
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(675, 428);
+            this.ClientSize = new System.Drawing.Size(1207, 699);
             this.ControlBox = false;
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label1);

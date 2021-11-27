@@ -78,17 +78,17 @@
     <Compile Include="View\CadastroAcao.designer.cs">
       <DependentUpon>CadastroAcao.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\RelatorioFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RelatorioFamilia.Designer.cs">
+      <DependentUpon>RelatorioFamilia.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\CadastroFamilia.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\CadastroFamilia.Designer.cs">
       <DependentUpon>CadastroFamilia.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\CriarFamilia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\CriarFamilia.Designer.cs">
-      <DependentUpon>CriarFamilia.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Entrega.cs">
       <SubType>Form</SubType>
@@ -125,11 +125,11 @@
     <EmbeddedResource Include="View\CadastroAcao.resx">
       <DependentUpon>CadastroAcao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\RelatorioFamilia.resx">
+      <DependentUpon>RelatorioFamilia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\CadastroFamilia.resx">
       <DependentUpon>CadastroFamilia.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\CriarFamilia.resx">
-      <DependentUpon>CriarFamilia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Entrega.resx">
       <DependentUpon>Entrega.cs</DependentUpon>

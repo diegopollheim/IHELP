@@ -37,7 +37,7 @@ namespace I_HELP.View
             dgvAcoes.Columns[4].HeaderText = "DATA FINAL";
 
             // AJUSTA A LARGURA DAS CÉLULAS AUTOMATICAMENTE
-            dgvAcoes.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgvAcoes.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
        
         protected override void OnPaintBackground(PaintEventArgs e)
@@ -71,6 +71,7 @@ namespace I_HELP.View
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             int indice = int.Parse(dgvAcoes.CurrentRow.Cells[0].Value.ToString());
+            
             
             AcaoEntity objAcao = new AcaoEntity(int.Parse(dgvAcoes.CurrentRow.Cells[0].Value.ToString()),
                                                           dgvAcoes.CurrentRow.Cells[1].Value.ToString(),
