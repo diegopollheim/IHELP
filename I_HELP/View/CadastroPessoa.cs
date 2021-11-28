@@ -30,8 +30,9 @@ namespace I_HELP.View
             btnAlterar.Hide();
             btnExcluir.Hide();
             btnCadastrar.Enabled = false;
-            BloquearInputs();
 
+            btnCancelar.Hide();
+            BloquearInputs();
 
             ccbFamilias.Items.Add(new ItemComboBox("Selecione", 0));
             FamiliaController controllerEstado = new FamiliaController();
@@ -110,10 +111,7 @@ namespace I_HELP.View
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            //var cpfPes = mskCPF.Text;
-            //PessoaController controller = new PessoaController();
-            //DataTable retorno = controller.BuscarPessoa(cpfPes);
-            //MessageBox.Show(retorno.Rows.Count.ToString());
+           
             if (Validacoes.ValidaCPF(Convert.ToString(mskCPF.Text)))
             {
                 PessoaController busca = new PessoaController();
@@ -234,7 +232,6 @@ namespace I_HELP.View
                 MessageBox.Show("Erro ao excluir");
             }
         }
-
         public void LiberarInputs()
         {
             ttbNomePessoa.Enabled = true;
@@ -259,19 +256,9 @@ namespace I_HELP.View
             dtpNasc.Value = DateTime.Today.AddYears(-18);
         }
 
-        private void mskCPF_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //buscaCpf(e);
-        }
-
         private void mskCPF_KeyUp(object sender, KeyEventArgs e)
         {
             buscaCpf(e);
-        }
-
-        private void mskCPF_KeyDown(object sender, KeyEventArgs e)
-        {
-            //buscaCpf(e);
         }
 
         private void buscaCpf(KeyEventArgs e)
@@ -289,6 +276,7 @@ namespace I_HELP.View
                         mskCPF.Enabled = false; // Bloqueia o input não permitindo mais a alteração
                         LiberarInputs();
 
+                        btnCadastrar.Hide();
                         btnAlterar.Show();
                         btnExcluir.Show();
 
@@ -302,7 +290,9 @@ namespace I_HELP.View
                     else
                     {
                         mskCPF.Enabled = false;
+                        btnCadastrar.Show();
                         btnCadastrar.Enabled = true;
+                        btnCancelar.Show();
                         LiberarInputs(); // Libera os inputs caso o CPF seja válido e não esteja registrado
                     }
                 }
@@ -325,23 +315,14 @@ namespace I_HELP.View
             }
         }
 
-      
-
-        private void button4_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
-
-        private void mskCPF_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-       
     }
 }

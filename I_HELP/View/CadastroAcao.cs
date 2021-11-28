@@ -46,7 +46,10 @@ namespace I_HELP.View
 
             // Preenche os campos na tela com a ação que veio do relatorio
             ttbNomeAcao.Text = acao.Nome.ToString();
+
+            dtpIni.MinDate = acao.DateIni;
             dtpIni.Value = acao.DateIni;
+            dtpFinal.MinDate = acao.DateIni;
             dtpFinal.Value = acao.DateFim;
 
             // Faz uma busca no banco nas tabelas Cidade e Estado e traz a cidade e estado da AÇÃO

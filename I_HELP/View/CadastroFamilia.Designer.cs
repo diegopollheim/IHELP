@@ -42,6 +42,7 @@ namespace I_HELP.View
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ttbRegistro
@@ -54,7 +55,7 @@ namespace I_HELP.View
             this.ttbRegistro.ReadOnly = true;
             this.ttbRegistro.Size = new System.Drawing.Size(424, 45);
             this.ttbRegistro.TabIndex = 0;
-            this.ttbRegistro.TextChanged += new System.EventHandler(this.ttbRegistro_TextChanged);
+            
             // 
             // btnGerar
             // 
@@ -106,16 +107,16 @@ namespace I_HELP.View
             this.cbbCidade.Name = "cbbCidade";
             this.cbbCidade.Size = new System.Drawing.Size(298, 39);
             this.cbbCidade.TabIndex = 5;
-            this.cbbCidade.SelectedIndexChanged += new System.EventHandler(this.cbbCidade_SelectedIndexChanged);
+            
             // 
             // btnSalvar
             // 
             this.btnSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSalvar.BackColor = System.Drawing.Color.SpringGreen;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Location = new System.Drawing.Point(431, 408);
+            this.btnSalvar.Location = new System.Drawing.Point(646, 418);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(424, 50);
+            this.btnSalvar.Size = new System.Drawing.Size(209, 50);
             this.btnSalvar.TabIndex = 8;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
@@ -136,9 +137,9 @@ namespace I_HELP.View
             this.btnAlterar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAlterar.BackColor = System.Drawing.Color.SpringGreen;
             this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlterar.Location = new System.Drawing.Point(431, 408);
+            this.btnAlterar.Location = new System.Drawing.Point(646, 418);
             this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(424, 50);
+            this.btnAlterar.Size = new System.Drawing.Size(209, 50);
             this.btnAlterar.TabIndex = 10;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = false;
@@ -157,7 +158,7 @@ namespace I_HELP.View
             this.lblTitulo.Size = new System.Drawing.Size(1132, 91);
             this.lblTitulo.TabIndex = 11;
             this.lblTitulo.Text = "CADASTRAR NOVA FAMILIA\r\n";
-            this.lblTitulo.Click += new System.EventHandler(this.label5_Click);
+            
             // 
             // button4
             // 
@@ -204,7 +205,7 @@ namespace I_HELP.View
             this.label1.Size = new System.Drawing.Size(126, 31);
             this.label1.TabIndex = 22;
             this.label1.Text = "ESTADO";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // label3
             // 
@@ -219,12 +220,28 @@ namespace I_HELP.View
             this.label3.TabIndex = 23;
             this.label3.Text = "CIDADE";
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCancelar.Location = new System.Drawing.Point(431, 418);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(185, 50);
+            this.btnCancelar.TabIndex = 24;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // CadastroFamilia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(1241, 674);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
@@ -242,7 +259,7 @@ namespace I_HELP.View
             this.Name = "CadastroFamilia";
             this.Text = "CriarFamilia";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.CriarFamilia_Load);
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,5 +280,6 @@ namespace I_HELP.View
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

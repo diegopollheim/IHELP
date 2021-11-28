@@ -44,10 +44,11 @@ namespace I_HELP.View
             this.mskCPF = new System.Windows.Forms.MaskedTextBox();
             this.dtpNasc = new System.Windows.Forms.DateTimePicker();
             this.lbIndice = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.ccbFamilias = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -153,12 +154,17 @@ namespace I_HELP.View
             // btnAlterar
             // 
             this.btnAlterar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAlterar.Location = new System.Drawing.Point(519, 721);
+            this.btnAlterar.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnAlterar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAlterar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAlterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlterar.Location = new System.Drawing.Point(732, 721);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(209, 50);
             this.btnAlterar.TabIndex = 13;
             this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.UseVisualStyleBackColor = false;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnExcluir
@@ -199,9 +205,6 @@ namespace I_HELP.View
             this.mskCPF.Size = new System.Drawing.Size(261, 45);
             this.mskCPF.TabIndex = 1;
             this.mskCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.mskCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCPF_MaskInputRejected);
-            this.mskCPF.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mskCPF_KeyDown);
-            this.mskCPF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mskCPF_KeyPress);
             this.mskCPF.KeyUp += new System.Windows.Forms.KeyEventHandler(this.mskCPF_KeyUp);
             // 
             // dtpNasc
@@ -227,25 +230,25 @@ namespace I_HELP.View
             this.lbIndice.TabIndex = 18;
             this.lbIndice.Visible = false;
             // 
-            // button4
+            // btnVoltar
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(1105, 12);
-            this.button4.MaximumSize = new System.Drawing.Size(75, 75);
-            this.button4.MinimumSize = new System.Drawing.Size(50, 50);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 50);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "VOLTAR";
-            this.button4.UseMnemonic = false;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVoltar.BackColor = System.Drawing.Color.Red;
+            this.btnVoltar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnVoltar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnVoltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVoltar.ForeColor = System.Drawing.Color.Black;
+            this.btnVoltar.Location = new System.Drawing.Point(1105, 12);
+            this.btnVoltar.MaximumSize = new System.Drawing.Size(75, 75);
+            this.btnVoltar.MinimumSize = new System.Drawing.Size(50, 50);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(75, 50);
+            this.btnVoltar.TabIndex = 19;
+            this.btnVoltar.Text = "VOLTAR";
+            this.btnVoltar.UseMnemonic = false;
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // label3
             // 
@@ -259,7 +262,6 @@ namespace I_HELP.View
             this.label3.Size = new System.Drawing.Size(69, 31);
             this.label3.TabIndex = 3;
             this.label3.Text = "CPF";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // ccbFamilias
             // 
@@ -284,15 +286,31 @@ namespace I_HELP.View
             this.label7.TabIndex = 21;
             this.label7.Text = "FAMILIA";
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCancelar.Location = new System.Drawing.Point(305, 721);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(209, 50);
+            this.btnCancelar.TabIndex = 22;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // CadastroPessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(1192, 819);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.ccbFamilias);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.lbIndice);
             this.Controls.Add(this.dtpNasc);
             this.Controls.Add(this.mskCPF);
@@ -336,9 +354,10 @@ namespace I_HELP.View
         private System.Windows.Forms.MaskedTextBox mskCPF;
         private System.Windows.Forms.DateTimePicker dtpNasc;
         private System.Windows.Forms.Label lbIndice;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox ccbFamilias;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

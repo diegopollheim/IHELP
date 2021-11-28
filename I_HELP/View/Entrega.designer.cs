@@ -45,6 +45,7 @@ namespace I_HELP.View
             // 
             this.Familia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Familia.AutoSize = true;
+            this.Familia.BackColor = System.Drawing.Color.Transparent;
             this.Familia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Familia.Location = new System.Drawing.Point(333, 233);
             this.Familia.Name = "Familia";
@@ -93,6 +94,7 @@ namespace I_HELP.View
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(333, 334);
             this.label1.Name = "label1";
@@ -134,6 +136,7 @@ namespace I_HELP.View
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(333, 438);
             this.label3.Name = "label3";

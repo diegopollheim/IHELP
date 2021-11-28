@@ -82,7 +82,6 @@ namespace I_HELP.View
 
             cbbCidade.SelectedIndex = cbbCidade.FindStringExact(dtCidade.Rows[0]["nomcid"].ToString());
 
-
             btnAlterar.Visible = true;
             btnAlterar.Enabled = true;
             btnSalvar.Visible = false;
@@ -106,15 +105,6 @@ namespace I_HELP.View
             {
                 e.Graphics.FillRectangle(brush, this.ClientRectangle);
             }
-        }
-        private void CriarFamilia_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbbCidade_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void cbbEstado_SelectedIndexChanged(object sender, EventArgs e)
@@ -151,9 +141,7 @@ namespace I_HELP.View
                 {
                     MessageBox.Show("Houve um erro ao cadastrar a familia");
                 }
-
             }
-
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)
@@ -171,13 +159,7 @@ namespace I_HELP.View
                 {
                     MessageBox.Show("Houve um erro ao alterar a familia");
                 }
-
             }
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -185,14 +167,9 @@ namespace I_HELP.View
             this.Close();
         }
 
-        private void ttbRegistro_TextChanged(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }
