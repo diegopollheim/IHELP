@@ -81,7 +81,7 @@ namespace I_HELP.Controller
             BancoInstance banco;
             using (banco = new BancoInstance())
             {
-                banco.Banco.ExecuteQuery(@"select * from familia where regfam like @1", out objResultado, "@1", "%" + registro + "%");
+                banco.Banco.ExecuteQuery(@"select familia.codfam,familia.regfam,UPPER(cidade.nomcid) from familia inner join cidade on cidade.codcid = familia.codcid where regfam like @1", out objResultado, "@1", "%" + registro + "%");
                 return objResultado;
             }
         }

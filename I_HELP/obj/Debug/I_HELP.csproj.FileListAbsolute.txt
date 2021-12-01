@@ -61,7 +61,6 @@ C:\Users\Diego\Downloads\I_HELP\obj\Debug\I_HELP.TelaPrincipal.resources
 C:\Users\Aluno\Desktop\I_HELP\obj\Debug\I_HELP.TelaPrincipal.resources
 C:\Users\Aluno\Desktop\I_HELP\obj\Debug\I_HELP.View.CadastroFamilia.resources
 C:\Users\Aluno\Desktop\I_HELP\obj\Debug\I_HELP.csproj.AssemblyReference.cache
-C:\Users\Aluno\Desktop\I_HELP\obj\Debug\I_HELP.View.CriarFamilia.resources
 C:\Users\Aluno\Desktop\I_HELP\obj\Debug\I_HELP.View.CadastroAcao.resources
 C:\Users\Aluno\Desktop\I_HELP\obj\Debug\I_HELP.View.RelatorioAcoes.resources
 F:\ihelp edgar\I_HELP\bin\Debug\DAO\Banco.mdf
@@ -174,3 +173,4 @@ C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.View.Entre
 C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.View.RelatorioAcoes.resources
 C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.TelaPrincipal.resources
 C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.View.RelatorioFamilia.resources
+C:\Users\Aluno\Desktop\I_HELP\obj\Debug\I_HELP.View.RelatorioFamilia.resources

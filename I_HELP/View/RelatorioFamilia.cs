@@ -22,9 +22,9 @@ namespace I_HELP.View
 
             dgvFamilia.DataSource = familiaController.BuscarPessoa("");
             dgvFamilia.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dgvFamilia.Columns[0].HeaderText = "ID";
+            dgvFamilia.Columns[0].HeaderText = "#";
             dgvFamilia.Columns[1].HeaderText = "REGISTRO";
-            dgvFamilia.Columns[2].HeaderText = "ID CIDADE";
+            dgvFamilia.Columns[2].HeaderText = "CIDADE";
             
         }
 
