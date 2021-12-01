@@ -135,6 +135,8 @@ namespace I_HELP.View
                 if (familiaController.CadastrarFamilia(familiaEntity))
                 {
                     MessageBox.Show("Familia cadastrada com sucesso", "Concluido!");
+                    RelatorioFamilia tela = new RelatorioFamilia();
+                    tela.Show();
                     this.Close();
                 }
                 else
@@ -152,8 +154,10 @@ namespace I_HELP.View
                 FamiliaController familiaController = new FamiliaController();
                 if (familiaController.AlterarFamilia(familiaEntity, int.Parse(lbIndex.Text)))
                 {
-                    MessageBox.Show("Familia alterara com sucesso", "Concluido!");
+                    MessageBox.Show("Familia alterada com sucesso", "Concluido!");
                     this.Close();
+                    RelatorioFamilia tela = new RelatorioFamilia();
+                    tela.Show();
                 }
                 else
                 {

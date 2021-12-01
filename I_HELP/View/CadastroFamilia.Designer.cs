@@ -55,7 +55,6 @@ namespace I_HELP.View
             this.ttbRegistro.ReadOnly = true;
             this.ttbRegistro.Size = new System.Drawing.Size(424, 45);
             this.ttbRegistro.TabIndex = 0;
-            
             // 
             // btnGerar
             // 
@@ -107,7 +106,6 @@ namespace I_HELP.View
             this.cbbCidade.Name = "cbbCidade";
             this.cbbCidade.Size = new System.Drawing.Size(298, 39);
             this.cbbCidade.TabIndex = 5;
-            
             // 
             // btnSalvar
             // 
@@ -158,7 +156,6 @@ namespace I_HELP.View
             this.lblTitulo.Size = new System.Drawing.Size(1132, 91);
             this.lblTitulo.TabIndex = 11;
             this.lblTitulo.Text = "CADASTRAR NOVA FAMILIA\r\n";
-            
             // 
             // button4
             // 
@@ -205,7 +202,6 @@ namespace I_HELP.View
             this.label1.Size = new System.Drawing.Size(126, 31);
             this.label1.TabIndex = 22;
             this.label1.Text = "ESTADO";
-            
             // 
             // label3
             // 
@@ -259,7 +255,6 @@ namespace I_HELP.View
             this.Name = "CadastroFamilia";
             this.Text = "CriarFamilia";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            
             this.ResumeLayout(false);
             this.PerformLayout();
 

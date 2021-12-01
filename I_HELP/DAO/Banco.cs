@@ -27,7 +27,7 @@ namespace I_HELP.DAO
 
     public class Banco
     {
-        private static string _strCon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Aluno\Desktop\I_HELP\DAO\Banco.mdf;Integrated Security=True";  //<-------------------- Lembrar de colocar string de conexão com o banco de dados aqui!
+        private static string _strCon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\DAO\Banco.mdf';Integrated Security=True";  //<-------------------- Lembrar de colocar string de conexão com o banco de dados aqui!
         private static volatile Banco instance;
         private static object syncRoot = new Object();
         private static int utilizacoes = 0;

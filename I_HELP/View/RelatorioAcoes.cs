@@ -68,6 +68,8 @@ namespace I_HELP.View
             if (controller.ExcluirAcao(linha))
             {
                 MessageBox.Show("Ação excluida com sucesso!","Concluido");
+                RelatorioAcoes telaAcoes = new RelatorioAcoes();
+                telaAcoes.Show();
                 this.Close();
             }
             else

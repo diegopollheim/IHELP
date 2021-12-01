@@ -152,6 +152,8 @@ namespace I_HELP.View
                         {
                             MessageBox.Show("Ação Alterada com Sucesso", "Concluido");
                             this.Close();
+                            RelatorioAcoes telaAcoes = new RelatorioAcoes();
+                            telaAcoes.Show();
                         }
                         else
                         {

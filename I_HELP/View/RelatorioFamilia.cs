@@ -36,10 +36,10 @@ namespace I_HELP.View
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
-        {
-            
+        {            
             CadastroFamilia tela = new CadastroFamilia(int.Parse(dgvFamilia.CurrentRow.Cells[0].Value.ToString()));
             tela.Show();
+            this.Close();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
