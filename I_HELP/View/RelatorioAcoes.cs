@@ -35,18 +35,20 @@ namespace I_HELP.View
             }
 
             // DEFINE O NOME HEADER DAS COLUNAS
-            dgvAcoes.Columns[0].HeaderText = "ID";
-            dgvAcoes.Columns[1].HeaderText = "NOME AÇÃO";
-            dgvAcoes.Columns[2].Visible = false;
-            dgvAcoes.Columns[3].Visible = false;
-            dgvAcoes.Columns[4].Visible = false;
-            dgvAcoes.Columns[5].HeaderText = "NOME CIDADE";
-            dgvAcoes.Columns[6].HeaderText = "SIGLA ESTADO";
-            dgvAcoes.Columns[7].HeaderText = "DATA INICIO";
-            dgvAcoes.Columns[8].HeaderText = "DATA FINAL";
-
+            if (dgvAcoes.Rows.Count > 0)
+            {
+                dgvAcoes.Columns[0].HeaderText = "ID";
+                dgvAcoes.Columns[1].HeaderText = "NOME AÇÃO";
+                dgvAcoes.Columns[2].Visible = false;
+                dgvAcoes.Columns[3].Visible = false;
+                dgvAcoes.Columns[4].Visible = false;
+                dgvAcoes.Columns[5].HeaderText = "NOME CIDADE";
+                dgvAcoes.Columns[6].HeaderText = "SIGLA ESTADO";
+                dgvAcoes.Columns[7].HeaderText = "DATA INICIO";
+                dgvAcoes.Columns[8].HeaderText = "DATA FINAL";
+                dgvAcoes.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
             // AJUSTA A LARGURA DAS CÉLULAS AUTOMATICAMENTE
-            dgvAcoes.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
        
         protected override void OnPaintBackground(PaintEventArgs e)
@@ -62,26 +64,35 @@ namespace I_HELP.View
 
         private void btnExcluirAca_Click(object sender, EventArgs e)
         {
-            AcaoController controller = new AcaoController();
-            int linha = int.Parse(dgvAcoes.CurrentRow.Cells[0].Value.ToString());
+            if (dgvAcoes.Rows.Count > 0)
+            {
+                AcaoController controller = new AcaoController();
+                int linha = int.Parse(dgvAcoes.CurrentRow.Cells[0].Value.ToString());
 
-            if (controller.ExcluirAcao(linha))
-            {
-                MessageBox.Show("Ação excluida com sucesso!","Concluido");
-                RelatorioAcoes telaAcoes = new RelatorioAcoes();
-                telaAcoes.Show();
-                this.Close();
+                if (controller.ExcluirAcao(linha))
+                {
+                    MessageBox.Show("Ação excluida com sucesso!", "Concluido");
+                    RelatorioAcoes telaAcoes = new RelatorioAcoes();
+                    telaAcoes.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Ação excluida com sucesso!", "Concluido");
+                }
             }
-            else
-            {
-                MessageBox.Show("Ação excluida com sucesso!","Concluido");
+            else { 
+                MessageBox.Show("Sem Ações!", "Concluido");
+
             }
         }
 
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            int indice = int.Parse(dgvAcoes.CurrentRow.Cells[0].Value.ToString());
+            if (dgvAcoes.Rows.Count > 0)
+            {
+                int indice = int.Parse(dgvAcoes.CurrentRow.Cells[0].Value.ToString());
             
             
             AcaoEntity objAcao = new AcaoEntity(int.Parse(dgvAcoes.CurrentRow.Cells[0].Value.ToString()),
@@ -94,6 +105,12 @@ namespace I_HELP.View
             CadastroAcao telaAlterar = new CadastroAcao(objAcao);
             telaAlterar.Show();
             this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Sem Ações!", "Concluido");
+
+            }
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

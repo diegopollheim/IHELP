@@ -124,6 +124,8 @@ namespace I_HELP.View
             {
                 cbbCidade.Items.Add(new ItemComboBox(consultaCidades.Rows[i]["nomcid"].ToString(), Convert.ToInt32(consultaCidades.Rows[i]["codcid"].ToString())));
             }
+            cbbCidade.SelectedIndex = cbbEstado.FindStringExact("Selecione");
+
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)

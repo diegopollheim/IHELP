@@ -21,11 +21,13 @@ namespace I_HELP.View
             FamiliaController familiaController = new FamiliaController();
 
             dgvFamilia.DataSource = familiaController.BuscarPessoa("");
-            dgvFamilia.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dgvFamilia.Columns[0].HeaderText = "#";
-            dgvFamilia.Columns[1].HeaderText = "REGISTRO";
-            dgvFamilia.Columns[2].HeaderText = "CIDADE";
-            
+            if (dgvFamilia.Rows.Count > 0)
+            {
+                dgvFamilia.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dgvFamilia.Columns[0].HeaderText = "#";
+                dgvFamilia.Columns[1].HeaderText = "REGISTRO";
+                dgvFamilia.Columns[2].HeaderText = "CIDADE";
+            }
         }
 
 
@@ -36,24 +38,30 @@ namespace I_HELP.View
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
-        {            
-            CadastroFamilia tela = new CadastroFamilia(int.Parse(dgvFamilia.CurrentRow.Cells[0].Value.ToString()));
-            tela.Show();
-            this.Close();
+        {
+            if (dgvFamilia.Rows.Count > 0)
+            {
+                CadastroFamilia tela = new CadastroFamilia(int.Parse(dgvFamilia.CurrentRow.Cells[0].Value.ToString()));
+                tela.Show();
+                this.Close();
+            }
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-           
-            FamiliaController familiaController = new FamiliaController();
-            if (familiaController.ExcluirFamilia(int.Parse(dgvFamilia.CurrentRow.Cells[0].Value.ToString())))
+
+            if (dgvFamilia.Rows.Count > 0)
             {
-                MessageBox.Show("Familia excluida com sucesso", "Concluido!");
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Houve um erro ao excluir a familia");
+                FamiliaController familiaController = new FamiliaController();
+                if (familiaController.ExcluirFamilia(int.Parse(dgvFamilia.CurrentRow.Cells[0].Value.ToString())))
+                {
+                    MessageBox.Show("Familia excluida com sucesso", "Concluido!");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Houve um erro ao excluir a familia");
+                }
             }
         }
         protected override void OnPaintBackground(PaintEventArgs e)

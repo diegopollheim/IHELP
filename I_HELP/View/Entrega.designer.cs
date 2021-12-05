@@ -154,9 +154,9 @@ namespace I_HELP.View
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTitulo.Location = new System.Drawing.Point(12, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(1639, 91);
+            this.lblTitulo.Size = new System.Drawing.Size(873, 91);
             this.lblTitulo.TabIndex = 20;
-            this.lblTitulo.Text = "ENTREGA DE AÇOES PARA AS FAMILIAS";
+            this.lblTitulo.Text = "ENTREGA DE AÇOES";
             // 
             // button4
             // 

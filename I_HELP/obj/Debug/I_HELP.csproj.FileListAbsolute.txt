@@ -174,3 +174,39 @@ C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.View.Relat
 C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.TelaPrincipal.resources
 C:\Users\Diego\Documents\SENAI\Projeto I HELP\I_HELP\obj\Debug\I_HELP.View.RelatorioFamilia.resources
 C:\Users\Aluno\Desktop\I_HELP\obj\Debug\I_HELP.View.RelatorioFamilia.resources
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\bin\Debug\DAO\Banco.mdf
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\bin\Debug\DAO\Banco_log.ldf
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\bin\Debug\I_HELP.exe.config
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\bin\Debug\I_HELP.exe
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\bin\Debug\I_HELP.pdb
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.csprojAssemblyReference.cache
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.View.CadastroAcao.resources
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.View.RelatorioFamilia.resources
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.View.CadastroFamilia.resources
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.View.Entrega.resources
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.View.RelatorioAcoes.resources
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.TelaPrincipal.resources
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.Properties.Resources.resources
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.View.CadastroPessoa.resources
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.csproj.GenerateResource.cache
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.csproj.CoreCompileInputs.cache
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.exe
+C:\Users\edgar\Desktop\I_HELP (2)\I_HELP\obj\Debug\I_HELP.pdb
+C:\Users\edgar\Desktop\I_HELP\bin\Debug\DAO\Banco.mdf
+C:\Users\edgar\Desktop\I_HELP\bin\Debug\DAO\Banco_log.ldf
+C:\Users\edgar\Desktop\I_HELP\bin\Debug\I_HELP.exe.config
+C:\Users\edgar\Desktop\I_HELP\bin\Debug\I_HELP.exe
+C:\Users\edgar\Desktop\I_HELP\bin\Debug\I_HELP.pdb
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.csprojAssemblyReference.cache
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.View.CadastroAcao.resources
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.View.RelatorioFamilia.resources
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.View.CadastroFamilia.resources
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.View.Entrega.resources
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.View.RelatorioAcoes.resources
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.TelaPrincipal.resources
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.Properties.Resources.resources
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.View.CadastroPessoa.resources
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.csproj.GenerateResource.cache
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.csproj.CoreCompileInputs.cache
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.exe
+C:\Users\edgar\Desktop\I_HELP\obj\Debug\I_HELP.pdb

@@ -38,10 +38,12 @@ namespace I_HELP.View
 
             cbbAcao.Items.Add(new ItemComboBox("Selecione", 0));
             BancoInstance banco;
+            MessageBox.Show(DateTime.Now.ToString("yyyy-m-d"));
             using (banco = new BancoInstance())
             {
                 //Comando SQL que insere no banco
-                banco.Banco.ExecuteQuery(@"select * from acao", out dtAcoes);
+
+                banco.Banco.ExecuteQuery(@"select * from acao where datefim > @1", out dtAcoes,"@1", DateTime.Now);
             }
             for (int i = 0; i < dtAcoes.Rows.Count; i++)
                 cbbAcao.Items.Add(new ItemComboBox(dtAcoes.Rows[i]["nomeaca"].ToString(),
